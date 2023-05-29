@@ -1,0 +1,178 @@
+body{
+	background-image: url(assets/background.png);
+	background-size: cover;
+	height: 100vh;
+}
+
+html, body{
+	overflow: hidden;
+}
+
+.female{
+	height: 120%;
+	width: 100%;
+	top: -30%;
+	position: relative;
+}
+
+.headline1 {
+	height: 100%;
+	width: 100%;
+	top: -110%;
+	left: 0%;
+	position: relative;
+}
+
+.headline2 {
+	height: 100%;
+	width: 100%;
+	top: -240%;
+	position: relative;
+}
+
+.subheadline {
+	height: 100%;
+	width: 100%;
+	top: -315%;
+	left: -10%;
+	position: relative;
+}
+
+.learnmore {
+	height: 20%;
+	width: 45%;
+	top: -355%;
+	left: 25%;
+	position: relative;
+}
+
+.logo {
+	height: 45%;
+	width: 40%;
+	top: -418%;
+	left: 0%;
+	position: relative;
+}
+
+.replay {
+	height: 15%;
+	width: 30%;
+	top: -382%;
+	left: 33%;
+	position: relative;
+	cursor: pointer;
+}
+
+section{
+	height: 100vh;
+}
+
+.fade-in {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+
+.fade-in2 {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.fade-in3 {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+
+.fade-in4 {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+}
+
+.fade-out {
+	animation-name: fadeOut;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+
+.slide-in-right {
+	animation-name: slideInRight;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+
+.slide-in-left {
+	animation-name: slideInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+}
+
+.minimize-top-right {
+	animation-name: minimizeTopRight;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	from {
+	transform: translateX(100%);
+	opacity: 0;
+	}
+	to {
+	transform: translateX(0);
+	opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+	transform: translateX(-100%);
+	opacity: 0;
+	}
+	to {
+	transform: translateX(0);
+	opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
+
+@keyframes minimizeTopRight {
+	from {
+		transform: translate(0, 0) scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: translate(5%, -5%) scale(0);
+		opacity: 0;
+	}
+}
+
